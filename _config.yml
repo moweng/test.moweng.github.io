@@ -19,7 +19,7 @@ permalink_defaults:
 
 # Directory
 source_dir: source
-public_dir: public
+public_dir: static
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -93,3 +93,24 @@ deploy:
   type: git
   repo: https://github.com/moweng/moweng.github.io.git
   branch: master
+
+
+qiniu:
+  offline: false
+  sync: true
+  bucket: moweng
+  # secret_file: sec/qn.json or C:
+  access_key: dP2RKyS97tc-duISWUxnbppPD8jeyFofc8ibvs0o
+  secret_key: DTd7Iia6rXAVIc1V2KjM6pYHDPR201sEr5DQFTO5
+  dirPrefix: static
+  urlPrefix: http://ppfft6lgg.bkt.clouddn.com/static
+  up_host: http://upload.qiniu.com
+  local_dir: static
+  update_exist: true
+  image: 
+    folder: img
+    extend: 
+  js:
+    folder: js
+  css:
+    folder: css
