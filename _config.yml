@@ -79,4 +79,4 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/moweng/moweng.github.io.git
-  branch: blog_page
+  branch: blog-page
